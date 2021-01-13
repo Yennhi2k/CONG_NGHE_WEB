@@ -1,0 +1,328 @@
+
+.container {
+    border: 1px solid #374957;
+}
+
+
+/* col-md-5 */
+
+.col-md-5 {
+    background-color: #374957;
+    /* position: absolute;
+    z-index: 2; */
+}
+
+
+/* ------------------------ */
+
+
+/* avt */
+
+.avt img {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+
+/* contact */
+
+.contact h2 {
+    padding-top: 70px;
+    margin-left: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 40px;
+}
+
+
+/* stt */
+
+.stt {
+    margin-left: 40px;
+    padding-top: 15px;
+}
+
+.stt li {
+    padding-bottom: 5px;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.icon {
+    font-size: 30px;
+    color: white;
+}
+
+span {
+    padding-left: 15px;
+    display: inline-block;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*  căn thẳng icon  */
+/* .stt li a i{
+    width: 33px;
+    text-align: center;
+
+} */
+
+/* SKILL */
+
+.skill {
+    padding-top: 50px;
+    margin-left: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 40px;
+}
+
+
+/* box */
+
+.box {
+    width: 80%;
+    padding-top: 15px;
+    color: white;
+    border-radius: 9px;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.progress {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0px;
+    height: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    transition: all 1.5s;
+}
+
+.progress-bar--html {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    animation: bartranshtml 2s ease-in-out;
+}
+
+.progress-bar--css {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    animation: bartranscss 2s ease-in-out;
+}
+
+.progress-bar--js {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    animation: bartransjs 2s ease-in-out;
+}
+
+.progress-bar--php {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    animation: bartransphp 2s ease-in-out;
+}
+
+@keyframes bartranshtml {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes bartranscss {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes bartransjs {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes bartransphp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+
+/* ------------------------------------------- */
+
+
+/* col-md-7 */
+
+
+/* --------------------------------------------- */
+
+
+/* content-1 */
+
+.content-1 h2 {
+    font-size: 30px;
+    margin-left: 25%;
+    margin-bottom: 25px;
+    color: #374957;
+    margin-top: 40px;
+}
+
+.content-1 {
+    color: #374957;
+    font-size: 17px;
+    line-height: 25px;
+    margin: auto;
+}
+
+.content-1 p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/* target */
+
+.target {
+    padding-top: 30px;
+    margin-left: 40px;
+    border-bottom: 2px solid #374957;
+    color: #374957;
+    font-size: 40px;
+}
+
+
+.target i{
+    color: #374957;
+    font-size: 40px;
+    padding-right: 10px;
+}
+.target p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/* education */
+
+.education {
+    padding-top: 30px;
+    margin-left: 40px;
+    border-bottom: 2px solid #374957;
+    color: #374957;
+    font-size: 40px;
+}
+.education i{
+    color: #374957;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+/* prize */
+
+.prize {
+    padding-top: 30px;
+    margin-left: 40px;
+    border-bottom: 2px solid #374957;
+    color: #374957;
+    font-size: 40px;
+}
+
+.prize i{
+    color: #374957;
+    font-size: 40px;
+    padding-right: 10px;
+}
+/* thanhtic */
+
+.thanhtic {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/* fllow */
+
+.follow {
+    padding-top: 50px;
+    margin-left: 40px;
+    border-bottom: 2px solid #374957;
+    color: #374957;
+    font-size: 40px;
+}
+.follow i{
+    color: #374957;
+    font-size: 40px;
+    padding-right: 10px;
+}
+.me i {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #374957;
+}
+
+.me a {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #374957;
+}
+
+.me {
+    margin-left: 40px;
+    padding-top: 15px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.fb {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
