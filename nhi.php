@@ -24,7 +24,7 @@
             <div class="row">
                 <div class=" col-12 col-md-5 col-lg-5 ">
                     <div class="avt">
-                        <img src="Anh/noimg.jpg" alt="avt">
+                        <img src="Anh/nhi.jpg" alt="avt" >
                     </div>
                     <div class="contact">
                         <h2>INFORMATION</h2>

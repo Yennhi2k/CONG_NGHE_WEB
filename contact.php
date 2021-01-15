@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="title"></label>
-                                    <input type="text" name="title" id="title" class="form-control" placeholder="Subject" >
+                                    <input type="text" name="title" id="title" class="form-control" placeholder="Tittle" >
                                     <div id="tieude_error">Please fill up your Tittle</div>
                                 </div>
                                 <div class="form-group">
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="message"></label>
-                                  <textarea rows="7" cols="50" input  type="text" name="message" id="message" class="form-control" placeholder="Describe project"></textarea>
+                                  <textarea rows="7" cols="50" input  type="text" name="message" id="message" class="form-control" placeholder="Message"></textarea>
                                   <div id="thongdiep_error">Please fill up your Message</div>
                                 </div>
                                 <button class="btn" type="submit">Submit</button>

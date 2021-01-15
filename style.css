@@ -78,7 +78,7 @@ label{
 }
  
 .listoption li:hover a{
-     padding-left: 75px;
+     padding-left: 60px;
      background-color:#cfd0d1;
      transition:  all .5s;
 }
