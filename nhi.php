@@ -33,7 +33,7 @@
                             <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
-                                    $sql=  'select * from information WHERE id=2 ';
+                                    $sql=  'select * from information WHERE  id_information = 2 ';
                             
                                     // $sql = 'select * from benhnhan';
                                     $result=mysqli_query($conn,$sql);
@@ -43,19 +43,19 @@
                             <?php
                                 foreach($post_list as $post){
                                     echo'<tr><i class="far fa-calendar-alt icon"
-                                    style="width: 25px; text-align: center;"></i><span>'.$post[1].'</span></tr>' ;
-                                    echo '</br>';
-                                    echo'<tr><i class="fas fa-user-alt icon"
                                     style="width: 25px; text-align: center;"></i><span>'.$post[2].'</span></tr>' ;
                                     echo '</br>';
-                                    echo'<tr><i class="fas fa-mobile-alt icon"
+                                    echo'<tr><i class="fas fa-user-alt icon"
                                     style="width: 25px; text-align: center;"></i><span>'.$post[3].'</span></tr>' ;
                                     echo '</br>';
-                                    echo'<tr><i class="far fa-envelope icon"
+                                    echo'<tr><i class="fas fa-mobile-alt icon"
                                     style="width: 25px; text-align: center;"></i><span>'.$post[4].'</span></tr>' ;
                                     echo '</br>';
-                                    echo'<tr><i class="fas fa-map-marker-alt icon"
+                                    echo'<tr><i class="far fa-envelope icon"
                                     style="width: 25px; text-align: center;"></i><span>'.$post[5].'</span></tr>' ;
+                                    echo '</br>';
+                                    echo'<tr><i class="fas fa-map-marker-alt icon"
+                                    style="width: 25px; text-align: center;"></i><span>'.$post[6].'</span></tr>' ;
                                     echo '</br>';}
                             ?>
 
@@ -102,7 +102,7 @@
                             <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
-                                    $sql=  'select * from introduce WHERE id=2 ';
+                                    $sql=  'select * from introduce WHERE id_introduce=2 ';
                             
                                     // $sql = 'select * from benhnhan';
                                     $result=mysqli_query($conn,$sql);
@@ -111,7 +111,7 @@
                             ?>
                             <?php
                                 foreach($post_list as $post){
-                                    echo'<td>'.$post[1].'</td>';}
+                                    echo'<td>'.$post[2].'</td>';}
                             ?>
                         </p>
                     </div>
@@ -123,7 +123,7 @@
                             <?php
                                     require("config-csdl.php");
                                     //b2: truy vấn
-                                        $sql=  'select * from target WHERE id=2 ';
+                                        $sql=  'select * from target WHERE id_target=2 ';
                                 
                                         // $sql = 'select * from benhnhan';
                                         $result=mysqli_query($conn,$sql);
@@ -132,7 +132,7 @@
                                 ?>
                                 <?php
                                     foreach($post_list as $post){
-                                        echo'<td>'.$post[1].'</td>';}
+                                        echo'<td>'.$post[2].'</td>';}
                                 ?>
                         </p>
                     </div>
@@ -141,10 +141,11 @@
                     </div>
                     <div class="content-1">
                         <p> 
-                            <?php
+                        <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
-                                    $sql=  'select * from education WHERE id=2 ';
+                                    $sql=  'select * from education WHERE id_education=5 ';
+                                    
                             
                                     // $sql = 'select * from benhnhan';
                                     $result=mysqli_query($conn,$sql);
@@ -153,9 +154,66 @@
                             ?>
                             <?php
                                 foreach($post_list as $post){
-                                    echo'<tr>'.$post[1].'</tr>' ;
-                                    echo'&ensp;';
                                     echo'<tr>'.$post[2].'</tr>' ;
+                                    echo'&ensp;';
+                                    echo'<tr>'.$post[3].'</tr>' ;
+                                    echo '</br>';}
+                            ?>
+                            <!-- ---------- -->
+                            <?php
+                                require("config-csdl.php");
+                                //b2: truy vấn
+                                    $sql=  'select * from education WHERE id_education=6';
+                                    
+                            
+                                    // $sql = 'select * from benhnhan';
+                                    $result=mysqli_query($conn,$sql);
+                                    //b3: Xử lý kết quả
+                                    $post_list= mysqli_fetch_all($result);
+                            ?>
+                            <?php
+                                foreach($post_list as $post){
+                                    echo'<tr>'.$post[2].'</tr>' ;
+                                    echo'&ensp;';
+                                    echo'<tr>'.$post[3].'</tr>' ;
+                                    echo '</br>';}
+                            ?>
+                            <!-- -------------- -->
+                            <?php
+                                require("config-csdl.php");
+                                //b2: truy vấn
+                                    $sql=  'select * from education WHERE id_education=7 ';
+                                    
+                            
+                                    // $sql = 'select * from benhnhan';
+                                    $result=mysqli_query($conn,$sql);
+                                    //b3: Xử lý kết quả
+                                    $post_list= mysqli_fetch_all($result);
+                            ?>
+                            <?php
+                                foreach($post_list as $post){
+                                    echo'<tr>'.$post[2].'</tr>' ;
+                                    echo'&ensp;';
+                                    echo'<tr>'.$post[3].'</tr>' ;
+                                    echo '</br>';}
+                            ?>
+                            <!-- ---------- -->
+                            <?php
+                                require("config-csdl.php");
+                                //b2: truy vấn
+                                    $sql=  'select * from education WHERE id_education=8';
+                                    
+                            
+                                    // $sql = 'select * from benhnhan';
+                                    $result=mysqli_query($conn,$sql);
+                                    //b3: Xử lý kết quả
+                                    $post_list= mysqli_fetch_all($result);
+                            ?>
+                            <?php
+                                foreach($post_list as $post){
+                                    echo'<tr>'.$post[2].'</tr>' ;
+                                    echo'&ensp;';
+                                    echo'<tr>'.$post[3].'</tr>' ;
                                     echo '</br>';}
                             ?>
                         </p>
@@ -168,7 +226,7 @@
                             <?php
                                     require("config-csdl.php");
                                     //b2: truy vấn
-                                        $sql=  'select * from prize WHERE id=2 ';
+                                        $sql=  'select * from prize WHERE id_prize=3 ';
                                 
                                         // $sql = 'select * from benhnhan';
                                         $result=mysqli_query($conn,$sql);
@@ -177,7 +235,23 @@
                                 ?>
                                 <?php
                                     foreach($post_list as $post){
-                                        echo'<td>'.$post[1].'</td>';
+                                        echo'<td>'.$post[2].'</td>';
+                                        echo '</br>';}
+                            ?>
+                            <!-- ----------------- -->
+                            <?php
+                                    require("config-csdl.php");
+                                    //b2: truy vấn
+                                        $sql=  'select * from prize WHERE id_prize=4 ';
+                                
+                                        // $sql = 'select * from benhnhan';
+                                        $result=mysqli_query($conn,$sql);
+                                        //b3: Xử lý kết quả
+                                        $post_list= mysqli_fetch_all($result);
+                                ?>
+                                <?php
+                                    foreach($post_list as $post){
+                                        echo'<td>'.$post[2].'</td>';
                                         echo '</br>';}
                             ?>
                         </li>

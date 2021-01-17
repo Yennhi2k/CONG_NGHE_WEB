@@ -25,5 +25,6 @@
         </li>
         <li  class="option"><a  href="service.php"><i class="fas fa-bell iconn"></i></i>Services</a></li>
         <li  class="option"><a  href="contact.php"><i class="fas fa-envelope iconn"></i>Contact</a></li>
+        <li  class="option"><a  href="login.php"><i class="fas fa-user-graduate iconn"></i>Admin</a></li>
     </ul>
 </nav>
