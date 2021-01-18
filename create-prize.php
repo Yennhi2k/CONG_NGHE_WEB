@@ -16,6 +16,13 @@
     }
  
 ?>
+         <style>
+    H2{
+        text-align: center;
+        color: #007bff;
+        margin-top:20px;
+        margin-bottom:10px;
+    }</style>
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,6 +41,7 @@
     ?>
     
     <div class="container">
+    <h2>CREATE PRIZE</h2>
     <form action="">
     <!-- thêm id vao url  --> 
         <div class="form-group">
@@ -46,7 +54,7 @@
         </div>
        
        
-        <button class="btn btn-success" type="submit">Edit prize</button>
+        <button class="btn btn-success" type="submit">Create prize</button>
         </form>
     </div>
     

@@ -1,34 +1,26 @@
 <?php
-    // kiểm tra id có tồn tại trên url hay k?
-    if(!isset($_GET['id'])) {
-        header("Location:introduce.php");
-    }
-      
-        //b1: kết nối với database
-        require("config-csdl.php");
-
-    // lấy dữ liệu  với id đã có trên csdl 
-    $id =  $_GET['id'];
-    $sql="select * from introduce where id_introduce=$id";
-    // echo $sql;
-    $result=mysqli_query($conn,$sql);
-    $bn= mysqli_fetch_array($result);
+   
 
     // ktra xem ng dùng đã gửi dl lên chưa 
-    if( isset($_GET['content_introduce'])  ){
-        $content_introduce = $_GET['content_introduce'];
+    if( isset($_GET['id'])&& isset($_GET['year_school']) && isset($_GET['schools']) ){
+        $id=$_GET['id'];
+        $year_school = $_GET['year_school'];
+        $schools = $_GET['schools'];
+        
+        //b1: kết nối với database
+        require("config-csdl.php");
         
         //b2: truy vấn 
-        $sql= "update introduce set content_introduce='$content_introduce' where id_introduce=$id";
+        $sql= "insert into education(id,year_school,schools) values('$id','$year_school','$schools' )";
         // echo $sql;
         $result=mysqli_query($conn,$sql);
         if($result) {
-           header("Location:introduce.php");
+           header("Location:education.php");
         }
     }
  
 ?>
- <style>
+         <style>
     H2{
         text-align: center;
         color: #007bff;
@@ -53,21 +45,25 @@
     ?>
     
     <div class="container">
-    <h2>EDIT INTRODUCE</h2>
+    <h2>CREATE INFORMATION</h2>
     <form action="">
     <!-- thêm id vao url  -->
-    <input type="hidden" name="id" value="<?php  echo $bn['id'] ?>">   
+
         <div class="form-group">
             <label for="id">id</label>
-            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" disable value=" <?php  echo $bn['id'] ?>">
+            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" >
         </div>
         <div class="form-group">
-            <label for="content_introduce">content_introduce</label>
-            <input type="text" name="content_introduce" id="content_introduce" class="form-control" placeholder="" aria-describedby="helpId"  value=" <?php  echo $bn['content_introduce'] ?>">
+            <label for="year_school">year_school</label>
+            <input type="text" name="year_school" id="year_school" class="form-control" placeholder="" aria-describedby="helpId"  >
+        </div>
+        <div class="form-group">
+            <label for="schools">schools</label>
+            <input type="text" name="schools" id="schools" class="form-control" placeholder="" aria-describedby="helpId" >
         </div>
        
        
-        <button class="btn btn-success" type="submit">Edit introduce</button>
+        <button class="btn btn-success" type="submit">Create education</button>
         </form>
     </div>
     

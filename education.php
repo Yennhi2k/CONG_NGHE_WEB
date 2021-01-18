@@ -45,6 +45,7 @@
                             <th>year_schools</th>
                             <th>schools</th>
                             <th>Edit</th>
+                            <th>Delete</th>
                         </thead>
 
                     <tbody>
@@ -56,12 +57,13 @@
                                 echo'<td>'.$post[2].'</td>';
                                 echo'<td>'.$post[3].'</td>';
                                 echo'<td><a href="edit-education.php?id='.$post[0].'"><i class="far fa-edit"></i></a></td>';
+                                echo'<td><a href="delete-education.php?id='.$post[0].'"><i class="fas fa-trash-alt"></i></a></td>';
                                 echo'</tr>';
                             }
                         ?>
                     </tbody>
                 </table>
-
+                <a href="create-education.php" class="btn btn-success " type="submit">Create</a>
             </div>
         </div>
       </main>

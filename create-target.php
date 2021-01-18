@@ -1,33 +1,24 @@
 <?php
-    // kiểm tra id có tồn tại trên url hay k?
-    if(!isset($_GET['id'])) {
-        header("Location:introduce.php");
-    }
-      
-        //b1: kết nối với database
-        require("config-csdl.php");
-
-    // lấy dữ liệu  với id đã có trên csdl 
-    $id =  $_GET['id'];
-    $sql="select * from introduce where id_introduce=$id";
-    // echo $sql;
-    $result=mysqli_query($conn,$sql);
-    $bn= mysqli_fetch_array($result);
 
     // ktra xem ng dùng đã gửi dl lên chưa 
-    if( isset($_GET['content_introduce'])  ){
-        $content_introduce = $_GET['content_introduce'];
+    if( isset($_GET['id'])&&isset($_GET['content_targer'])  ){
+        $id= $_GET['id'];
+        $content_targer= $_GET['content_targer'];
+
+        //b1: kết nối với database
+        require("config-csdl.php");
         
         //b2: truy vấn 
-        $sql= "update introduce set content_introduce='$content_introduce' where id_introduce=$id";
+        $sql= "insert into target(id,content_targer) values('$id','$content_targer')";
         // echo $sql;
         $result=mysqli_query($conn,$sql);
         if($result) {
-           header("Location:introduce.php");
+           header("Location:target.php");
         }
     }
  
 ?>
+ 
  <style>
     H2{
         text-align: center;
@@ -51,23 +42,22 @@
   <?php
         require('admin-header.php');
     ?>
-    
+   
     <div class="container">
-    <h2>EDIT INTRODUCE</h2>
     <form action="">
     <!-- thêm id vao url  -->
-    <input type="hidden" name="id" value="<?php  echo $bn['id'] ?>">   
+    <h2>CREATE TARGET</h2>
         <div class="form-group">
             <label for="id">id</label>
-            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" disable value=" <?php  echo $bn['id'] ?>">
+            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" >
         </div>
         <div class="form-group">
-            <label for="content_introduce">content_introduce</label>
-            <input type="text" name="content_introduce" id="content_introduce" class="form-control" placeholder="" aria-describedby="helpId"  value=" <?php  echo $bn['content_introduce'] ?>">
+            <label for="content_targer">content_target</label>
+            <input type="text" name="content_targer" id="content_targer" class="form-control" placeholder="" aria-describedby="helpId"  >
         </div>
        
        
-        <button class="btn btn-success" type="submit">Edit introduce</button>
+        <button class="btn btn-success" type="submit">Create target</button>
         </form>
     </div>
     

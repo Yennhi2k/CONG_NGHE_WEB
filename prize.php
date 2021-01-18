@@ -44,6 +44,7 @@
                             <th>id</th>
                             <th>content_prize</th>
                             <th>Edit</th>
+                            <th>Delete</th>
                         </thead>
 
                     <tbody>
@@ -54,12 +55,14 @@
                                 echo'<td>'.$post[1].'</td>';
                                 echo'<td>'.$post[2].'</td>';
                                 echo'<td><a href="edit-prize.php?id='.$post[0].'"><i class="far fa-edit"></i></a></td>';
+                                echo'<td><a href="delete-prize.php?id='.$post[0].'"><i class="fas fa-trash-alt"></i></a></td>';
+
                                 echo'</tr>';
                             }
                         ?>
                     </tbody>
                 </table>
-                <!-- <a href="create-prize.php"><button class="btn btn-success " type="submit">Create</button></a> -->
+                <a href="create-prize.php"><button class="btn btn-success " type="submit">Create</button></a>
 
             </div>
         </div>

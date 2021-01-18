@@ -29,6 +29,13 @@
     }
  
 ?>
+ <style>
+    H2{
+        text-align: center;
+        color: #007bff;
+        margin-top:20px;
+        margin-bottom:10px;
+    }</style>
 <!doctype html>
 <html lang="en">
   <head>
@@ -47,6 +54,7 @@
     ?>
     
     <div class="container">
+    <h2>EDIT EDUCATION</h2>
     <form action="">
     <!-- thêm id vao url  -->
     <input type="hidden" name="id" value="<?php  echo $bn['id'] ?>">   

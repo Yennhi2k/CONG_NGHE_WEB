@@ -9,7 +9,7 @@
     // lấy dữ liệu  với id đã có trên csdl 
     $id =  $_GET['id'];
     $sql="select * from information where id_information=$id";
-    echo $sql;
+    // echo $sql;
     $result=mysqli_query($conn,$sql);
     $bn= mysqli_fetch_array($result);
 
@@ -34,6 +34,13 @@
     }
  
 ?>
+ <style>
+    H2{
+        text-align: center;
+        color: #007bff;
+        margin-top:20px;
+        margin-bottom:10px;
+    }</style>
 <!doctype html>
 <html lang="en">
   <head>
@@ -52,6 +59,7 @@
     ?>
     
     <div class="container">
+    <h2>EDIT INFORMATION</h2>
     <form action="">
     <!-- thêm id vao url  -->
         <input type="hidden" name="id" value="<?php  echo $bn['id'] ?>">   
