@@ -27,10 +27,10 @@
                             <h2 class="text-center">Login Form</h2>
                             <p class="text-center">Login with your username and password.</p>
                             <div class="form-group">
-                                <input class="form-control" type="text" id="username"name="username" placeholder="Username"  required >
+                                <input class="form-control" type="text" id="username"name="username" placeholder="Username" >
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="password" id="pass" name="password" placeholder="Password" required>
+                                <input class="form-control" type="password" id="pass" name="password" placeholder="Password" >
                             </div>
                             <div class="form-group">
                                 <input class="form-control button" type="submit" id="login" name="login" value="Login" >
