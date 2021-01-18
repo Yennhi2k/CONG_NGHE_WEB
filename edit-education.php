@@ -10,7 +10,7 @@
     // lấy dữ liệu  với id đã có trên csdl 
     $id =  $_GET['id'];
     $sql="select * from education where id_education=$id";
-    echo $sql;
+    // echo $sql;
     $result=mysqli_query($conn,$sql);
     $bn= mysqli_fetch_array($result);
 

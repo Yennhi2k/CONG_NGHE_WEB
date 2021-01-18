@@ -33,7 +33,7 @@
                             <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
-                                    $sql=  'select * from information WHERE  id_information = 2 ';
+                                    $sql=  'select * from information WHERE  id = 2 ';
                             
                                     // $sql = 'select * from benhnhan';
                                     $result=mysqli_query($conn,$sql);
@@ -102,7 +102,7 @@
                             <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
-                                    $sql=  'select * from introduce WHERE id_introduce=2 ';
+                                    $sql=  'select * from introduce WHERE id=2 ';
                             
                                     // $sql = 'select * from benhnhan';
                                     $result=mysqli_query($conn,$sql);
@@ -123,7 +123,7 @@
                             <?php
                                     require("config-csdl.php");
                                     //b2: truy vấn
-                                        $sql=  'select * from target WHERE id_target=2 ';
+                                        $sql=  'select * from target WHERE id=2 ';
                                 
                                         // $sql = 'select * from benhnhan';
                                         $result=mysqli_query($conn,$sql);
@@ -144,7 +144,7 @@
                         <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
-                                    $sql=  'select * from education WHERE id_education=5 ';
+                                    $sql=  'select * from education WHERE id=2 ';
                                     
                             
                                     // $sql = 'select * from benhnhan';
@@ -160,7 +160,7 @@
                                     echo '</br>';}
                             ?>
                             <!-- ---------- -->
-                            <?php
+                            <!-- <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
                                     $sql=  'select * from education WHERE id_education=6';
@@ -177,9 +177,9 @@
                                     echo'&ensp;';
                                     echo'<tr>'.$post[3].'</tr>' ;
                                     echo '</br>';}
-                            ?>
+                            ?> -->
                             <!-- -------------- -->
-                            <?php
+                            <!-- <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
                                     $sql=  'select * from education WHERE id_education=7 ';
@@ -196,9 +196,9 @@
                                     echo'&ensp;';
                                     echo'<tr>'.$post[3].'</tr>' ;
                                     echo '</br>';}
-                            ?>
+                            ?> -->
                             <!-- ---------- -->
-                            <?php
+                            <!-- <?php
                                 require("config-csdl.php");
                                 //b2: truy vấn
                                     $sql=  'select * from education WHERE id_education=8';
@@ -215,7 +215,7 @@
                                     echo'&ensp;';
                                     echo'<tr>'.$post[3].'</tr>' ;
                                     echo '</br>';}
-                            ?>
+                            ?> -->
                         </p>
                     </div>
                     <div class="prize">
