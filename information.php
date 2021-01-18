@@ -68,7 +68,7 @@
                     </tbody>
                 </table>
                 
-                
+                <p><a href="introduce.php" class = "btn btn-success">Back</a></p>   
 
             </div>
         </div>

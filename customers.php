@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>PRIZE</title>
+    <title>CUSTOMER</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
     }</style>
     
     <div class="container-fluid">
-    <h2>PRIZE</h2>
+    <h2>CUSTOMER</h2>
         <div class="row">
             <div class="col-md-12">
                 <?php
@@ -31,7 +31,8 @@
                     require("config-csdl.php");
                     //b2: truy vấn 
                     
-                    $sql=  'select * from prize';
+                    $sql=  'select * from customer';
+                    // echo "$sql";
 
                     $result=mysqli_query($conn,$sql);
                     //b3: Xử lý kết quả
@@ -40,11 +41,10 @@
                    
                 <table class="table table-hover">
                         <thead>
-                            <th>id_prize</th>
                             <th>id</th>
-                            <th>content_prize</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
+                            <th>title</th>
+                            <th>email</th>
+                            <th>message</th>
                         </thead>
 
                     <tbody>
@@ -54,18 +54,14 @@
                                 echo'<td>'.$post[0].'</td>';
                                 echo'<td>'.$post[1].'</td>';
                                 echo'<td>'.$post[2].'</td>';
-                                echo'<td><a href="edit-prize.php?id='.$post[0].'"><i class="far fa-edit"></i></a></td>';
-                                echo'<td><a href="delete-prize.php?id='.$post[0].'"><i class="fas fa-trash-alt"></i></a></td>';
-
+                                echo'<td>'.$post[3].'</td>';
                                 echo'</tr>';
                             }
                         ?>
                     </tbody>
                 </table>
-                <a href="create-prize.php"><button class="btn btn-success " type="submit">Create</button></a>
-                <br>
-                <br>
-                <p><a href="education.php" class = "btn btn-success">Back</a></p>
+                
+                <p><a href="information.php" class = "btn btn-success">Back</a></p>   
 
             </div>
         </div>

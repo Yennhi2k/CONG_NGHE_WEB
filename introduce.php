@@ -62,6 +62,10 @@
                     </tbody>
                 </table>
                 <a href="create-introduce.php" class="btn btn-success " type="submit">Create</a>
+                <br>
+                <br>
+                <p><a href="prize.php" class = "btn btn-success">Back</a></p>
+                
             </div>
         </div>
       </main>
