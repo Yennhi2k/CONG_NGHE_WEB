@@ -33,7 +33,7 @@
                                 <input class="form-control" type="password" name="password" placeholder="Password" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control button" type="submit" name="login" value="Login">
+                                <input class="form-control button" type="submit" name="login" value="Login" >
                             </div>
                             <div class="link login-link text-center">Not yet a member? 
                         </div>
