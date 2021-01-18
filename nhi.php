@@ -111,7 +111,8 @@
                             ?>
                             <?php
                                 foreach($post_list as $post){
-                                    echo'<td>'.$post[2].'</td>';}
+                                    echo'<td>'.$post[2].'</td>';
+                                    echo '</br>';}
                             ?>
                         </p>
                     </div>
@@ -132,7 +133,8 @@
                                 ?>
                                 <?php
                                     foreach($post_list as $post){
-                                        echo'<td>'.$post[2].'</td>';}
+                                        echo'<td>'.$post[2].'</td>';
+                                        echo '</br>';}
                                 ?>
                         </p>
                     </div>

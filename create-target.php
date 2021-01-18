@@ -29,7 +29,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>CREATE TARGET</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -59,6 +59,7 @@
        
         <button class="btn btn-success" type="submit">Create target</button>
         </form>
+        <p><a href="target.php" class = "btn btn-success">Back</a></p>
     </div>
     
 

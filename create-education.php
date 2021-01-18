@@ -30,7 +30,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>CREATE EDUCATION</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,7 +45,7 @@
     ?>
     
     <div class="container">
-    <h2>CREATE INFORMATION</h2>
+    <h2>CREATE EDUCATION</h2>
     <form action="">
     <!-- thêm id vao url  -->
 
@@ -65,6 +65,7 @@
        
         <button class="btn btn-success" type="submit">Create education</button>
         </form>
+        <p><a href="education.php" class = "btn btn-success">Back</a></p>
     </div>
     
 
