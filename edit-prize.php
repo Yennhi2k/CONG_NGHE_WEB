@@ -59,7 +59,7 @@
     <input type="hidden" name="id" value="<?php  echo $bn['id'] ?>">   
         <div class="form-group">
             <label for="id">id</label>
-            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" disable value=" <?php  echo $bn['id'] ?>">
+            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" disabled="disabled" value=" <?php  echo $bn['id'] ?>">
         </div>
         <div class="form-group">
             <label for="content_prize">content_prize</label>
@@ -69,6 +69,7 @@
        
         <button class="btn btn-success" type="submit">Edit prize</button>
         </form>
+        <p><a href="prize.php" class = "btn btn-success">Back</a></p>
     </div>
     
 

@@ -60,7 +60,7 @@
     <input type="hidden" name="id" value="<?php  echo $bn['id'] ?>">   
         <div class="form-group">
             <label for="id">id</label>
-            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" disable value=" <?php  echo $bn['id'] ?>">
+            <input type="text" name="id" id="id" class="form-control" placeholder=" " aria-describedby="helpId" disabled="disabled" value=" <?php  echo $bn['id'] ?>">
         </div>
         <div class="form-group">
             <label for="year_school">year_school</label>
@@ -74,6 +74,7 @@
        
         <button class="btn btn-success" type="submit">Edit education</button>
         </form>
+        <p><a href="education.php" class = "btn btn-success">Back</a></p>
     </div>
     
 
