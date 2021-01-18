@@ -13,7 +13,7 @@ if(isset($_POST['username']))
     // $user=mysqli_fetch_all($result);
     if(mysqli_num_rows($result)==1)
     {
-        header("Location:admin.php");
+        header("Location:customers.php");
     }
     else
     {
