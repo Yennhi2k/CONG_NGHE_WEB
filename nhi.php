@@ -228,7 +228,7 @@
                             <?php
                                     require("config-csdl.php");
                                     //b2: truy vấn
-                                        $sql=  'select * from prize WHERE id_prize=3 ';
+                                        $sql=  'select * from prize WHERE id=2 ';
                                 
                                         // $sql = 'select * from benhnhan';
                                         $result=mysqli_query($conn,$sql);
@@ -241,7 +241,7 @@
                                         echo '</br>';}
                             ?>
                             <!-- ----------------- -->
-                            <?php
+                            <!-- <?php
                                     require("config-csdl.php");
                                     //b2: truy vấn
                                         $sql=  'select * from prize WHERE id_prize=4 ';
@@ -255,7 +255,7 @@
                                     foreach($post_list as $post){
                                         echo'<td>'.$post[2].'</td>';
                                         echo '</br>';}
-                            ?>
+                            ?> -->
                         </li>
                     </div>
                     <div class="follow">

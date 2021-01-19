@@ -81,7 +81,7 @@
         </div>
         <div class="form-group">
             <label for="email">email</label>
-            <input type="text" name="email" id="email" class="form-control" placeholder="Please enter your information " aria-describedby="helpId"  value="<?php  echo $bn['email'] ?>">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your information " aria-describedby="helpId"  value="<?php  echo $bn['email'] ?>">
         </div>
         <div class="form-group">
             <label for="address">address</label>
